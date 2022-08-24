@@ -1,0 +1,52 @@
+
+
+
+
+//1.(a) Print odd numbers in an Array using Anonymous function
+
+var oddNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].filter(function(n) {
+    return n % 2 == 1
+})
+console.log(oddNumbers)
+    // output ->  [1, 3, 5, 7, 9]
+
+/1.(b) Convert all string to title caps in an string array
+
+var toUppercase = ["Muthu", "keerthana", "Sindhu", "Ashok", "chinna", "Jeba"].map(function(n) {
+    return n.toUpperCase()
+})
+console.log(toUppercase)
+
+
+//1. (c) Sum of all numbers in an array
+
+var toSum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].reduce(function(acc, curr) {
+    return acc + curr
+})
+console.log(toSum)
+
+
+
+
+//3.(a) Print odd numbers in an Array using Arrow function
+
+var oddNumbers1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].filter((n) => n % 2 == 1)
+console.log(oddNumbers1)
+
+    // output ->  [1, 3, 5, 7, 9]
+
+
+//3.(b) Convert all string to title caps in an string array
+
+var toUppercase1 = ["Muthu", "keerthana", "Sindhu", "Ashok", "chinna", "Jeba"].map((n) => n.toUpperCase())
+console.log(toUppercase1)
+
+// Output ->  ['MUTHU''KEERTHANA', 'SINDHU', 'ASHOK', 'CHINNA', 'JEBA']
+
+
+//3. (c) Sum of all numbers in an array
+
+var toSum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].reduce((acc, curr) => acc + curr)
+console.log(toSum)
+
+// output -> 55
